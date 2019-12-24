@@ -1,0 +1,114 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+#login-box {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 15% auto;
+}
+
+#register-box {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 20% auto;
+}
+
+.text-box {
+    font-size: 20px;
+    margin: 10px 0px;
+    border-radius: 50px;
+    border: 1px solid #e17614;
+}
+
+#code-box {
+    display: none;
+}
+
+.text-box i {
+    width: 20px;
+    text-align: center;
+    margin: 0px 10px;
+}
+
+.text-box input {
+    width: 250px;
+    border: none;
+    background: none;
+    outline: none;
+    color: black;
+    font-size: 18px;
+    transition: 0.4s;
+    height: 25px;
+    line-height: 25px;
+}
+
+#login-box .btn-outline-primary {
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    outline: none;
+}
+
+#login-box p {
+    margin: 20px auto;
+    color: rgb(160, 153, 153);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#forgot-box {
+    display: none;
+    flex-direction: column;
+    width: 350px;
+    margin: 20% auto;
+}
+
+#forgot-box .btn-outline-primary {
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    outline: none;
+}
+
+.footer-login {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-login button {
+    height: 30px;
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+#register-box .btn-outline-primary {
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    outline: none;
+}
+
+#code-register-box {
+    display: none;
+}
+
+
+/* #code {
+    float: right;
+    width: 150px;
+    border: 1px solid #e17614;
+    background: none;
+    outline: none;
+    color: black;
+    font-size: 18px;
+    transition: 0.4s;
+    height: 25px;
+    line-height: 25px;
+} */
