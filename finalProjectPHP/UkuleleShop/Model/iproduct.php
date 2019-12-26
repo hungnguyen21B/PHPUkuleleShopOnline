@@ -1,7 +1,6 @@
 <?php
 interface IProduct{
-
-    public abstract function getNicePrice();
+    public function getNicePrice();
 
 }
 ?>

@@ -9,6 +9,11 @@ abstract class Product implements IProduct{
     public $type;
     public $description;
     public $image;
-
+    public function __construct(){
+        
+    }
+    public function getNicePrice(){
+        return 0;
+    }
 }
 ?>

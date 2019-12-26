@@ -1,10 +1,6 @@
 <?php
 require "../Model/account.php";
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "ukuleleshopmanagement";
-$db = new mysqli($servername, $username, $password, $database);
+require "../Add/database.php";
 $sql ="select * from account; ";
 $accounts = $db->query($sql)->fetch_all();
 // var_dump($accounts);
@@ -17,7 +13,7 @@ if(isset($_POST["username"]) && isset($_POST["password"])){
 		$sql = "SELECT * from Account where username='$username' and password='$password'";
         $user = $db->query($sql)->fetch_object("Account");
         if (isset($user) && $user->checkRole()){
-            header("Location: ../Model/account.php");
+            header("Location: ../Shop/indexAd.php");
             // $checklogin= 1;
         }   
     }
@@ -61,7 +57,6 @@ if(isset($_POST["forgot-username"]) && isset($_POST["forgot-phonenumber"])){
 ?>
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <title>Hung Shop Login</title>
